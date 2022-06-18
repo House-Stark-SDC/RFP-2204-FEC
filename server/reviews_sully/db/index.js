@@ -3,13 +3,13 @@ require("dotenv").config();
 
 // Config for the database
 // Will likely have to change the user, pw, host
-// const config = {
-//   user: 'sullyclark',
-//   password: 'password',
-//   database: 'reviews_db',
-//   host: 'localhost',
-//   port: 5432
-// }
+const config = {
+  user: 'sullyclark',
+  password: 'password',
+  database: 'reviews_db',
+  host: 'localhost',
+  port: 5432
+}
 
 //
 // const config = {
@@ -19,13 +19,13 @@ require("dotenv").config();
 //   host: 'ec2-54-184-131-113.us-west-2.compute.amazonaws.com',
 //   port: 5432
 // }
-const config = {
-  user: process.env.PGUSER,
-  password: process.env.PGPASSWORD,
-  database: process.env.PGDATABASE,
-  host: process.env.PGHOST,
-  port: 5432
-}
+// const config = {
+//   user: process.env.PGUSER,
+//   password: process.env.PGPASSWORD,
+//   database: process.env.PGDATABASE,
+//   host: process.env.PGHOST,
+//   port: 5432
+// }
 
 // From node-postgres website:
 // "If you're working on a web application or other software which makes frequent queries you'll want to use a connection pool."
