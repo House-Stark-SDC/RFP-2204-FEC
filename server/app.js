@@ -10,6 +10,7 @@ app.use(express.static(path.join(__dirname, '../dist')));
 
 // Again not entirely sure, but I think this is important
 app.use(express.json());
+// app.use(cors());
 
 
 app.listen(port, (err) => {
